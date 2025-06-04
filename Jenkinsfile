@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "ibr122/my-flask-app"
+        IMAGE_NAME = "ibr122/devops-flask-app"
         IMAGE_TAG = "latest"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
         DEPLOYMENT_FILE = "k8s/deployment.yaml"
