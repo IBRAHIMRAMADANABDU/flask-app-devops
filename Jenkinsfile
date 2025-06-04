@@ -5,7 +5,7 @@ pipeline {
         IMAGE_NAME = "ibr122/devops-flask-app"
         IMAGE_TAG = "latest"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
-        DEPLOYMENT_FILE = "k8s/deployment.yaml"
+        DEPLOYMENT_FILE = "k8s/deploy.yaml"
         KUBECONFIG_PATH = "/var/lib/jenkins/.kube/config"
     }
 
