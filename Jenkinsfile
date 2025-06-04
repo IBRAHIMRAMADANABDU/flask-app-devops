@@ -13,7 +13,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/IBRAHIMRAMADANABDU/flask-app-devops.git'
+                git branch: 'main', credentialsId: 'git-credentials-id', url: 'https://github.com/IBRAHIMRAMADANABDU/flask-app-devops.git'
             }
         }
 
@@ -60,4 +60,3 @@ pipeline {
         }
     }
 }
-
